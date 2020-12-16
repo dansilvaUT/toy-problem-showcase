@@ -20,14 +20,13 @@ class EvenAndOdd extends Component {
         //create place holder variables to avoid modifying state object
         let evenNums = [];
         let oddNums = [];
-        for (let i = 0; i < splitArray.length; i++) {
-            if (splitArray[i] % 2 === 0) {
-                evenNums.push(splitArray[i])
+        splitArray.filter(element => {
+            if (element % 2 === 0) {
+                evenNums.push(element)
             } else {
-                oddNums.push(splitArray[i]);
-
+                oddNums.push(element)
             }
-        }
+        });
         this.setState({ evenArray: evenNums, oddArray: oddNums });
     }
 

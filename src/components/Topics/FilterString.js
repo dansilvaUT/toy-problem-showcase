@@ -24,6 +24,7 @@ class FilterString extends Component {
         }
         this.setState({ filteredArray: filteredArray });
     }
+
     render() {
         return (
             <div className="puzzleBox filterStringPB">
@@ -35,6 +36,7 @@ class FilterString extends Component {
             </div>
         )
     }
+
 }
 
 export default FilterString;
